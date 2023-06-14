@@ -115,3 +115,13 @@ body {
   li:hover {
     transform: scale(1.2);
   }
+
+
+
+  /* STRETCH DIV */
+
+  .stretch-div {
+    width: 80%;
+    height: 80%;
+    background-color: gray; /* Just for visualization */
+  }
