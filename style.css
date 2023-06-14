@@ -1,56 +1,117 @@
 /* style.css */
 
-/* Navigation Link Animation */
-nav a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #fcd34d;
-    color: #333;
-    transition: transform 0.3s ease-in-out;
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
   }
   
-  nav a:hover {
-    transform: scale(1.1);
+  header {
+    background-color: #f44336;
+    padding: 10px;
   }
   
-  /* Bouncing Animation for Sections */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
   section {
-    animation: bounce 0.8s ease-in-out infinite;
+    margin: 20px;
   }
   
-  @keyframes bounce {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+  h1 {
+    color: #f44336;
   }
   
-  /* Styling for Project List */
-  #projects li {
-    list-style: none;
-    margin-bottom: 20px;
+  h2 {
+    color: #009688;
   }
   
-  #projects h2 {
-    color: #fcd34d;
-    font-size: 20px;
-    margin-bottom: 5px;
+  p {
+    color: #333;
   }
   
-  #projects p {
-    font-size: 16px;
-    margin-top: 5px;
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
   }
   
-  /* Footer Styling */
+  a {
+    color: #009688;
+    text-decoration: none;
+  }
+  
   footer {
-    margin-top: 50px;
+    background-color: #ccc;
+    padding: 10px;
     text-align: center;
-    font-size: 14px;
-    color: #888;
+  }
+  
+  /* Specific Styles */
+  
+  #about {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  #technologies {
+    background-color: #e0f2f1;
+    padding: 20px;
+  }
+  
+  #frameworks {
+    background-color: #b2dfdb;
+    padding: 20px;
+  }
+  
+  #contact {
+    background-color: #fffde7;
+    padding: 20px;
+  }
+  
+  #projects {
+    background-color: #fafafa;
+    padding: 20px;
+  }
+  
+  /* Color Classes */
+  
+  .red {
+    color: #f44336;
+  }
+  
+  .teal {
+    color: #009688;
+  }
+  
+  .grey {
+    color: #777;
+  }
+  
+  .yellow {
+    color: #ffeb3b;
+  }
+  
+  .light-green {
+    color: #8bc34a;
+  }
+  
+  .light-blue {
+    color: #03a9f4;
   }
