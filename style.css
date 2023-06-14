@@ -1,73 +1,56 @@
-body {
-    background-color: #f5f7ff;
+/* style.css */
+
+/* Navigation Link Animation */
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fcd34d;
     color: #333;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    transition: transform 0.3s ease-in-out;
   }
   
-  header {
-    background-color: #6c63ff;
-    padding: 10px;
+  nav a:hover {
+    transform: scale(1.1);
   }
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+  /* Bouncing Animation for Sections */
   section {
+    animation: bounce 0.8s ease-in-out infinite;
+  }
+  
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Styling for Project List */
+  #projects li {
+    list-style: none;
     margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
   }
   
-  h1 {
-    color: #6c63ff;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  h2 {
-    color: #333;
+  #projects h2 {
+    color: #fcd34d;
     font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  
-  ul li {
     margin-bottom: 5px;
   }
   
-  a {
-    color: #6c63ff;
-    text-decoration: none;
+  #projects p {
+    font-size: 16px;
+    margin-top: 5px;
   }
   
+  /* Footer Styling */
   footer {
-    background-color: #6c63ff;
-    color: #fff;
+    margin-top: 50px;
     text-align: center;
-    padding: 10px;
+    font-size: 14px;
+    color: #888;
   }
