@@ -1,17 +1,19 @@
 /* style.css */
 
-/* General Styles */
-
+/* Body */
 body {
+    background-color: #f2f2f2;
+    color: #333;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
   }
   
+  /* Header */
   header {
-    background-color: #f44336;
-    padding: 10px;
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px;
   }
   
   nav ul {
@@ -30,88 +32,50 @@ body {
     text-decoration: none;
   }
   
+  /* Sections */
   section {
-    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  h1 {
-    color: #f44336;
+  section h1 {
+    color: #3b5998;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   
-  h2 {
-    color: #009688;
-  }
-  
-  p {
-    color: #333;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
+  section p {
     color: #555;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
-  a {
-    color: #009688;
+  section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  section ul li {
+    margin-bottom: 5px;
+  }
+  
+  section a {
+    color: #3b5998;
     text-decoration: none;
   }
   
+  /* Footer */
   footer {
-    background-color: #ccc;
-    padding: 10px;
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px;
     text-align: center;
+    font-size: 14px;
   }
   
-  /* Specific Styles */
-  
-  #about {
-    background-color: #f7f7f7;
-    padding: 20px;
-  }
-  
-  #technologies {
-    background-color: #e0f2f1;
-    padding: 20px;
-  }
-  
-  #frameworks {
-    background-color: #b2dfdb;
-    padding: 20px;
-  }
-  
-  #contact {
-    background-color: #fffde7;
-    padding: 20px;
-  }
-  
-  #projects {
-    background-color: #fafafa;
-    padding: 20px;
-  }
-  
-  /* Color Classes */
-  
-  .red {
-    color: #f44336;
-  }
-  
-  .teal {
-    color: #009688;
-  }
-  
-  .grey {
-    color: #777;
-  }
-  
-  .yellow {
-    color: #ffeb3b;
-  }
-  
-  .light-green {
-    color: #8bc34a;
-  }
-  
-  .light-blue {
-    color: #03a9f4;
+  footer p {
+    margin: 0;
   }
