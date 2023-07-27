@@ -1,5 +1,3 @@
-/* style.css */
-
 /* Body */
 body {
     background-color: black;
@@ -104,8 +102,15 @@ body {
   
   /* Add spacing between the divs */
   .resume-div {
-    height: 20px;
-  }
+    width: 30%;
+    height: 20vh;
+    margin: 0 5%;
+    padding: 20px;
+    background-color: black; /* Set the background color to black */
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
   
   /* Add spacing on the top and bottom of the divs */
   #resume {
@@ -128,22 +133,14 @@ body {
     color: #fff;
   }
   
-  /* Additional styles for section headers */
-  #resume h1,
-  #projects h1,
-  #contact h1 {
-    color: #fff;
-  }
-  
   /* Additional styles for links inside "about" and "contact" sections */
   #contact a,
   #about a {
     color: #fff;
   }
   
-
   /* Additional styles for "contact" section with background image */
-#contact {
+  #contact {
     background-image: url('snow_flakes.png');
     background-size: cover;
     background-position: center;
@@ -151,3 +148,54 @@ body {
     padding: 4rem;
     text-align: center;
   }
+  
+  /* New styles for the about-me section */
+  #about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* New styles for the three divs in the about-me section */
+  .about-me-div,
+  .skills-div,
+  .frameworks-div {
+    width: 90%;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Spacing between the three divs in the about-me section */
+  .about-me-div {
+    height: 30vh;
+  }
+  
+  /* New styles for the skills and frameworks sections */
+  #skills-and-frameworks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* New styles for the two divs in the skills-and-frameworks section */
+  .skills-div,
+  .frameworks-div {
+    width: 40%;
+    height: 35vh;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Spacing between the two divs in the skills-and-frameworks section */
+  .skills-div {
+    margin-right: 5%;
+  }
+  
