@@ -139,14 +139,44 @@ body {
     color: #fff;
   }
   
-  /* Additional styles for "contact" section with background image */
-  #contact {
+
+
+/* CONTACT PAGE */
+
+
+
+
+/* New styles for the contact section */
+#contact {
     background-image: url('snow_flakes.png');
     background-size: cover;
     background-position: center;
     color: #fff;
     padding: 4rem;
     text-align: center;
+  }
+
+
+  /* New styles for the contact container */
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* New styles for the "Contact Me" section content */
+  #contact h1,
+  #contact p,
+  #contact ul li {
+    color: #fff;
+  }
+  
+  /* New styles for links inside the "Contact Me" section */
+  #contact a {
+    color: #fff;
   }
   
   /* New styles for the about-me section */
@@ -199,3 +229,15 @@ body {
     margin-right: 5%;
   }
   
+/* Additional styles for the "about-content" div */
+.about-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Additional styles for the text inside the "about-content" div */
+  .about-content p {
+    color: #fff;
+  }
