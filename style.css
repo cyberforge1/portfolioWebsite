@@ -100,8 +100,8 @@ body {
     background-color: black;
   }
   
-  /* Add spacing between the divs */
-  .resume-div {
+/* Add spacing between the divs */
+.resume-div {
     width: 30%;
     height: 20vh;
     margin: 0 5%;
@@ -110,21 +110,35 @@ body {
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-  
-  /* Add spacing on the top and bottom of the divs */
-  #resume {
-    padding: 20px 0;
+    float: left; /* Float the divs to the left to make them sit side by side */
   }
   
-  /* Additional styles for "about" section with background image */
-  #about {
+  /* Clear the float after the sets of divs to prevent layout issues */
+  .resume-container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Adjust the width of the container to fit the two sets of divs */
+  .resume-container {
+    width: 100%;
+  }
+  
+
+  
+/* Additional styles for "about" section with background image */
+#about {
     background-image: url('mountain.png');
     background-size: cover;
     background-position: center;
     color: #fff;
     padding: 4rem;
     text-align: center;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the content takes at least the full viewport height */
   }
   
   #about h1,
@@ -240,4 +254,39 @@ body {
   /* Additional styles for the text inside the "about-content" div */
   .about-content p {
     color: #fff;
+  }
+
+
+/* New styles for the "projects" section */
+#projects {
+    width: 100%;
+  }
+  
+  /* New styles for the "project-row" divs */
+  .project-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* New styles for the "project-div" divs */
+  .project-div {
+    width: 48%; /* Adjust the width to leave some space for spacing between the divs */
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 150%; /* Make the div 50% taller */
+  }
+  
+  /* Additional styles to add spacing between the "project-div" divs */
+  .project-div + .project-div {
+    margin-left: 2%;
+  }
+  
+  /* Additional styles to create spacing between the rows */
+  .project-row + .project-row {
+    margin-top: 20px;
   }
