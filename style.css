@@ -2,141 +2,152 @@
 
 /* Body */
 body {
-    background-color: #333; /* Change the body background color to dark grey (#333) */
-    color: #fff; /* Change text color to white */
+    background-color: black;
+    color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Add padding for the header */
     padding-top: 6vh;
-}
-
-/* Header */
-header {
+  }
+  
+  /* Header */
+  header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* Remove height to allow it to adjust based on content */
     background-color: #3b5998;
     color: #fff;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin-right: 20px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-}
-
-/* Sections */
-section {
-    /* Set height to full viewport height */
+  }
+  
+  /* Sections */
+  section {
     height: 90vh;
-    background-color: #333; /* Change background color to dark grey (#333) */
-    color: #fff; /* Change text color to white */
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-section h1 {
+  }
+  
+  section h1 {
     color: #3b5998;
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-section p {
-    color: #fff; /* Change text color to white */
+  }
+  
+  section p {
+    color: #fff;
     font-size: 16px;
     line-height: 1.5;
-}
-
-section ul {
+  }
+  
+  section ul {
     list-style-type: disc;
     margin-left: 20px;
-}
-
-section ul li {
+  }
+  
+  section ul li {
     margin-bottom: 5px;
-}
-
-section a {
+  }
+  
+  section a {
     color: #3b5998;
     text-decoration: none;
-}
-
-/* Footer */
-footer {
+  }
+  
+  /* Footer */
+  footer {
     background-color: #3b5998;
     color: #fff;
     padding: 20px;
     text-align: center;
     font-size: 14px;
-}
-
-footer p {
+  }
+  
+  footer p {
     margin: 0;
-}
-
-/* STRETCH DIV */
-.stretch-div {
+  }
+  
+  /* STRETCH DIV */
+  .stretch-div {
     width: 80%;
     height: 80%;
-    background-color: #333; /* Just for visualization */
-}
+    background-color: black;
+  }
+  
+  /* Add spacing between the divs */
+  .resume-div {
+    height: 20px;
+  }
+  
+  /* Add spacing on the top and bottom of the divs */
+  #resume {
+    padding: 20px 0;
+  }
+  
+  /* Additional styles for "about" section with background image */
+  #about {
+    background-image: url('mountain.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 4rem;
+    text-align: center;
+  }
+  
+  #about h1,
+  #about p,
+  #about ul li {
+    color: #fff;
+  }
+  
+  /* Additional styles for section headers */
+  #resume h1,
+  #projects h1,
+  #contact h1 {
+    color: #fff;
+  }
+  
+  /* Additional styles for links inside "about" and "contact" sections */
+  #contact a,
+  #about a {
+    color: #fff;
+  }
+  
 
-/* Add spacing between the divs */
-.resume-div {
-    height: 20px; /* Adjust the height as needed */
-}
-
-/* Add spacing on the top and bottom of the divs */
-#resume {
-    padding: 20px 0; /* Adjust the padding as needed */
-}
-
-/* Add this code to your style.css file */
-#about-me {
-    background-color: #333; /* Dark grey background */
-    color: #fff; /* White text color */
-}
-
-#about-me h1,
-#about-me p,
-#about-me ul li {
-    color: #fff; /* White text color for headers, paragraphs, and list items */
-}
-
-
-/* Add this code to your style.css file */
-#about h1,
-#resume h1,
-#projects h1,
-#contact h1 {
-    color: #fff; /* White text color for section headers */
-}
-/* Add this code to your style.css file */
-#contact a,
-#about-me a {
-    color: #fff; /* White text color for links inside the Contact and About Me sections */
-}
+  /* Additional styles for "contact" section with background image */
+#contact {
+    background-image: url('snow_flakes.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 4rem;
+    text-align: center;
+  }
